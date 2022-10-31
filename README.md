@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Two-Zer00/3-column-preview-card-component-main)
+- Live Site URL: [Live Site](https://two-zer00.github.io/3-column-preview-card-component-main/)
 
 ## My process
 

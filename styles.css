@@ -25,13 +25,14 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 main{
     display: flex;
     flex-direction: row;
     width: 70%;
-    max-width: 1440px;
     border-radius: .50rem;
     overflow: hidden;
 }
@@ -110,8 +111,14 @@ main>section>a:hover{
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 1440px){
+    body{
+        width: auto;
+        height: auto;
+    }
+
     main{
+        margin: 60px 0px;
         flex-direction: column;
         width: 90%;
     }
