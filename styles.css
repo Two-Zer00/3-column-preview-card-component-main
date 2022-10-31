@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@300;400&display=swap');
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --fs:15px;
+}
+
+main>section h2{
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: xx-large;
+    margin: 0;
+    text-transform: uppercase;
+}
+main>section p{
+    line-height: 25px; 
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 1440px;
+    border-radius: .50rem;
+    overflow: hidden;
+}
+
+main>section{
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 60px;
+    gap: 100px;
+}
+
+
+main>section>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+main>section:nth-child(1){
+    background: var(--bright-orange);
+}
+
+main>section:nth-child(2){
+    background: var(--dark-cyan);
+}
+
+main>section:nth-child(3){
+    background: var(--very-dark-cyan);
+}
+
+main>section:nth-child(1)>a{
+    color: var(--bright-orange);
+}
+main>section:nth-child(2)>a{
+    color: var(--dark-cyan);
+}
+main>section:nth-child(3)>a {
+    color: var(--very-dark-cyan);
+}
+
+
+main>section>a{
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: white;
+    border-radius: 3rem;
+    width:fit-content ;
+    font-weight: normal;
+    
+}
+
+main>section>a:hover{
+    background: rgba(255, 255, 255, 0);
+    outline: 1px solid white;
+    color: white;
+    transition: all .2s;
+}
+
+*{
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: var(--fs);
+    font-weight: lighter;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.attribution{
+    display: none;
+}
+
+
+@media screen and (max-width: 375px){
+    main{
+        flex-direction: column;
+        width: 90%;
+    }
+    main>section{
+        height: fit-content;
+        padding: 50px 60px;
+        gap: 20px;
+    }
+
+    main>section h2{
+        font-size: 40px;
+    }
+
+}
