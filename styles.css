@@ -32,7 +32,7 @@ body{
 main{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width:80%;
     border-radius: .50rem;
     overflow: hidden;
 }
@@ -111,7 +111,7 @@ main>section>a:hover{
 }
 
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1000px){
     body{
         width: auto;
         height: auto;
